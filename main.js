@@ -31,6 +31,9 @@ function displayTask(task) {
                             to class for styling */
         taskDiv.classList.add("complete");
     }
+    else {
+        taskDiv.classList.add("incomplete")
+    }
     taskDiv.appendChild(taskText);
     taskDiv.appendChild(taskDate);
     if (task.completed) {
