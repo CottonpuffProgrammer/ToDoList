@@ -11,6 +11,16 @@ task.date = "May 25, 2022"
 task.completed = true; */
 
 function isValid():boolean {
+    let taskValid = getElement("task");
+    let dateValid = getElement("date");
+    if (taskValid.value == "" || taskValid.value == null) {
+        alert("Enter a name for the task!");
+        return false;
+    }
+    if (dateValid.value == "" || dateValid.value == null) {
+        alert("Enter a due date for the task!");
+        return false;
+    }
     return true;
 }
 
